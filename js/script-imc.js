@@ -15,13 +15,13 @@ function calcIMC(){
     }else if(valorIMC <= 24.9){
         classificacaoIMC = "com seu peso ideal. Parabéns!";
     }else if(valorIMC <= 29.9){
-        classificacaoIMC = "sobrepeso";
+        classificacaoIMC = "com sobrepeso";
     }else if(valorIMC <= 34.9){
-        classificacaoIMC = "obesidade gral I";
+        classificacaoIMC = "com obesidade grau I";
     }else if(valorIMC <= 39.9){
-        classificacaoIMC = "obesidade gral II";
+        classificacaoIMC = "com obesidade grau II";
     }else {
-        classificacaoIMC = "obesidade gral III. Cuidado!";
+        classificacaoIMC = "com obesidade grau III. Cuidado!";
     };
 
  result.textContent = `Seu IMC é ${valorIMC} e você está ${classificacaoIMC}`
