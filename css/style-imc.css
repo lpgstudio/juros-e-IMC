@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{height:100%;text-align: center;background-color: #eee;}
+
+nav ul{
+    width: 70%;
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav ul li {
+    padding: 10px;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgba(34, 34, 34, 0.596);
+    border-bottom: 1px solid transparent;
+}
+
+nav ul li a:hover{
+    color: rgb(34, 34, 34);
+    border-bottom: 1px solid rgb(34, 34, 34);
+}
+
+
+
+
+
+main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.jurosbox{
+    width: min(90%,500px);
+    height: 500px;
+    margin-top: 40px;
+
+    background: rgb(180,0,76);
+    background: linear-gradient(318deg, rgba(180,0,76,1) 0%, rgba(121,9,111,1) 29%, rgba(0,212,255,1) 100%);
+    border-radius:17px;
+    box-shadow: 3px 3px 10px #222;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox{width: 100%;}
+
+.inputbox h1{
+    color: white;
+    padding-bottom: 50px;
+}
+
+.inputbox [type=number],
+.inputbox [type=text]{
+    width: 90%;
+    height: 40px;
+    padding: 15px 5px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    font-size: 20px;
+}
+.inputbox [type=number]:focus,
+.inputbox [type=text]:focus{
+    outline: none;
+    color:#222;
+}
+
+.inputbox [type=submit]:focus{
+    outline: none;
+}
+
+.inputbox [type=submit]{
+    width:200px;
+    height: 40px;
+    margin: 15px 0;
+    cursor: pointer;
+    background-color: green;
+    border: none;
+    border-radius:7px;
+    color: white;
+    font-size: 20px;
+}
+
+.resultado {
+    border: 2px solid #fff;
+    border-radius: 7px;
+    width: 90%;
+    height: 120px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resultado h1{
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 10px;
+}

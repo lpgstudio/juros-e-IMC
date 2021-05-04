@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora de Juros Simples</title>
+
+   
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="./index.html">Juros Simples</a></li>
+            <li><a href="./imc.html">IMC</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="jurosbox">
+            <div class="inputbox">
+                <h1>Juros Simples</h1>
+                <input type="number" id="amount" nome="valor" placeholder="Valor" required>
+                <input type="number" id="time" nome="tempo" placeholder="Tempo / Parcelas" required>
+                <input type="number" id="taxa" nome="taxa" placeholder="Taxa de juros" required>
+                <input type="submit" id="submit" value="Enviar" onClick="">
+            </div>
+            <div class="resultado">
+                <h1 id="result"></h1>
+            </div>
+        </div>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
